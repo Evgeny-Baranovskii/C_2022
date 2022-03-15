@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int a,b,i,x;
+        printf("Введите значение a: ");
+        scanf ("%d", &a);
+        printf("Введите значение b: ");
+        scanf ("%d", &b);
+        
+    if (a>=b)
+    {
+        printf("Ошибка, не выпоняется условие b>a. Введите переменные заново.");
+        exit(1);
+    }
+    x=0;
+    for(i=a;i<=b;i++)
+    {
+        x=i*3;
+        FILE *test_file;
+        test_file=fopen ("test","a");
+        fprintf (test_file,"%d\n",x);
+        fclose (test_file);
+        
+    }
+    return 0;
+}
