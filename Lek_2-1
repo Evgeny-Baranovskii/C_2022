@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    for (int a=0; a<101; a++)
+    {
+        if (a%3==0)
+        {
+           printf ("Числа, нацело делящиеся на 3: %d\n",a);
+        }
+        
+    }
+    return 0;
+}
