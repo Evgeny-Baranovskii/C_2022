@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    int sum=0;
+    while (a<=1000)
+    {
+        if(a%7==0){
+            sum=sum+a;
+        }
+        a+=4;
+    }
+    printf("Сумма чисел, кратных 7: %d\n", sum);
+
+    return 0;
+}
