@@ -1,1 +1,14 @@
 
+#include <iostream>
+using namespace std;
+
+float Squaredsum (float a, float b)
+{
+float c=a+b;
+return 0;
+}
+
+int main()
+{
+cout<<
+}
