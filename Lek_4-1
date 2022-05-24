@@ -1,24 +1,13 @@
 #include <iostream>
 using namespace std;
-
-int maim ()
-{
-setlocale ( LC_ALL, "Russian");
+int main(){
+setlocale(LC_ALL, "Russian");
 int i;
-char a [10][8]={"ноль",
-"один",
-"два",
-"три",
-"четыре",
-"пять",
-"шесть",
-"семь",
-"восемь",
-"девять"};
-
-cout <<"Введите цифру от 0 до 9:";
-cin >> i;
-cout << a[i]<< endl;
+char a[10][13] = {"ноль", "один", "два", "три", "четыре", "пять",
+"шесть", "семь", "восемь", "девять"};
+cout«"Введите число от 0 до 9: ";
+cin»i;
+cout«a[i]«endl;
 
 return 0;
 }
