@@ -1,1 +1,35 @@
+#include <iostream>
+using namespace std;
+
+void print (int a);
+void print (float a);
+void print (char a);
+void print (int a, int b);
+
+int main()
+{
+print (33);
+print (55184657);
+print ('x');
+print (17,20);
+
+return 0;
+}
+
+void print (int a)
+{
+    cout << a << endl;
+}
+void print (float a)
+{
+    cout << a << endl;
+}
+void print (char a)
+{
+    cout << a << endl;
+}
+void print (int a, int b)
+{
+    cout << a << ", " << b;
+}
 
