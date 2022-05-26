@@ -18,7 +18,7 @@ void Sort(int *a, int b)
 }
 for (int x = 0; x < b; x++) 
 {
-   cout « a[x] « " ";
+   cout <<a[x] << " ";
 }
 }
 int main()
@@ -27,9 +27,9 @@ int main()
    int a[z] = {2, 19, 8, 5, 22, 14, 9, 4, 8, 12};
    for (z = 0; z < 10; z++)
  {
- cout « a[z] « " ";
+ cout << a[z] << " ";
 }
-cout « endl;
+cout << endl;
 Sort(a, z);
 
 return 0;
