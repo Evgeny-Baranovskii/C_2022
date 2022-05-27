@@ -1,1 +1,31 @@
-
+#include <iostream>
+using namespace std;
+class CreditCard
+{
+    public:
+    int Number;
+    float Balance,c;
+    
+    CreditCard(int a, float b) 
+    {
+        Number = a;
+        Balance = b;
+    };
+    
+    float Take(float v)
+    {
+        return Balance = Balance - v;
+    };
+    
+    float Put(float v)
+    {
+        return Balance = Balance + v;
+    };
+};
+int main()
+{
+    CreditCard firstCC(1234, 50), * card;
+    cout << card->Put(10) << endl;
+    
+    return 0;
+}
