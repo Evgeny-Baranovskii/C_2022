@@ -13,5 +13,5 @@ void reverse (char *b)
 {
  if(*b)
  reverse (b+1);
- cout « *b;
+ cout << *b;
 }
