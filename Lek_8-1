@@ -1,31 +1,33 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
-class CreditCard
+
+class CreditCard 
 {
-    public:
-    int Number;
-    float Balance,c;
-    
-    CreditCard(int a, float b) 
-    {
-        Number = a;
-        Balance = b;
-    };
-    
-    float Take(float v)
-    {
-        return Balance = Balance - v;
-    };
-    
-    float Put(float v)
-    {
-        return Balance = Balance + v;
-    };
+public: 
+ int number;
+ float balance;
+ void Put(float V)
+ { 
+ balance += V; 
+ 
+ };
+ void Take(float V)
+ { 
+ balance -= V;
+ };
+ CreditCard(int num = 1, float bal = 10)
+ { 
+ number = num; balance = bal;
+ }
 };
+
 int main()
 {
-    CreditCard firstCC(1234, 50), * card;
-    cout << card->Put(10) << endl;
-    
-    return 0;
+ CreditCard firstCC(1234, 50), *card;
+ card = &firstCC;
+ card -> Put(70);
+ cout « firstCC.balance « endl;
+ firstCC.Take(70);
+ cout « firstCC.balance « endl;
 }
