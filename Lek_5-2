@@ -1,36 +1,20 @@
+
 #include <iostream>
 using namespace std;
 
-void Sort(int *a, int b)
+void Sort(int x[15])
 {
-   int c;
-   for (int x = 0; x < b - 1; x++) 
-{
-   for (int y = 0; y < b - x - 1; y++) 
-{
-   if (a[y] < a [y + 1]) 
-{
-   c = a[y];
-   a[y] = a[y + 1];
-   a[y + 1] = c;
-}
-}
-}
-for (int x = 0; x < b; x++) 
-{
-   cout <<a[x] << " ";
-}
+ for (int a=0;a<15;a++)
+ {
+ for (int b = a + 1; b < 15; b++)
+ if (x[b] > x[a]) swap (x[a],x[b]);
+ cout « x[a]« ' ';
+ 
+ }
 }
 int main()
 {
-   int z = 10;
-   int a[z] = {2, 19, 8, 5, 22, 14, 9, 4, 8, 12};
-   for (z = 0; z < 10; z++)
- {
- cout << a[z] << " ";
-}
-cout << endl;
-Sort(a, z);
-
-return 0;
+ int x[15]={2, 10, 55,382,55,27,5,5,35,9, 1,53,72,99,12};
+ Sort(x); 
+ return 0;
 }
