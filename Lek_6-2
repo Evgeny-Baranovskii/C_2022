@@ -2,15 +2,15 @@
 using namespace std;
 
 void print (int a);
-void print (float a);
-void print (char a);
-void print (int a, int b);
+void print (float b);
+void print (char c);
+void print (int d, int e);
 
 int main()
 {
-print (33);
-print (55184657);
-print ('x');
+print (10);
+print (1020304050);
+print ('f');
 print (17,20);
 
 return 0;
@@ -20,16 +20,16 @@ void print (int a)
 {
     cout << a << endl;
 }
-void print (float a)
+void print (float b)
 {
-    cout << a << endl;
+    cout << b<< endl;
 }
-void print (char a)
+void print (char c)
 {
-    cout << a << endl;
+    cout << c<< endl;
 }
-void print (int a, int b)
+void print (int d, int e)
 {
-    cout << a << ", " << b;
+    cout << d<< ", " << e;
 }
 
