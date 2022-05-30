@@ -7,7 +7,6 @@ int main()
 {
  char a[] = "ABCDE" ;
  reverse (a);
- return 0;
 }
 void reverse (char *a)
 {
