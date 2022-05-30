@@ -9,9 +9,9 @@ int main()
  reverse (a);
  return 0;
 }
-void reverse (char *b)
+void reverse (char *a)
 {
- if(*b)
- reverse (b+1);
- cout << *b;
+ if(*a)
+ reverse (a+1);
+ cout << *a;
 }
