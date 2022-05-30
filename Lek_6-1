@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
+int s
 void reverse (char *a);
 
 int main()
 {
+int s =strlen(a);
  char a[] = "ABCDE" ;
  reverse (a);
 }
