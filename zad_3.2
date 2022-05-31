@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+int n;
+
+int main()
+{
+    string file="numbers.txt"; //переменная file хранит путь к нашему файлу
+    ofstream fout;  //Отвечает за ввод данных в файл
+    fout.open(file); //Открываем файл или создаём его
+    cout<<"Введите число n: ";
+    cin>>n;
+    if (n>0)
+    fout<<n;
+    else
+    fout.close();
+
+}
