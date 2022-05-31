@@ -1,0 +1,23 @@
+#include <fstream>
+using namespace std;
+ int main()
+ {
+     int a;
+     char s; 
+     cout<<"Введите число: ";
+     cin>>a;
+     cout<<"Введите символ: ";
+     cin>>s;
+     string file="number.txt";
+     ofstream fout;
+     fout.open(file);
+     for (int i=1;i<=a;i++)
+     {
+         for(int j=1;j<=a;j++)
+         {
+             fout<<s;
+         }
+         fout<<endl;
+     }
+     return 0;
+ }
