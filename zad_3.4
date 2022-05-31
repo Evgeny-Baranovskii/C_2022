@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class Box
+{
+    public:
+    float x,y,z;
+};
+float volume( float x, float y, float z)
+{
+    float a=x*y*z;
+    return a;
+}
+int main()
+{ 
+    float a,x,y,z;
+    cout<<"Введите значение х: ";
+    cin>>x;
+    cout<<"Введите значение y: ";
+    cin>>y;
+    cout<<"Введите значение z: ";
+    cin>>z;
+    cout<<volume(x,y,z);
+    return 0;
+}
