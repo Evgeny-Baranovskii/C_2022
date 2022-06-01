@@ -11,9 +11,11 @@ int main()
     fout.open(file); //Открываем файл или создаём его
     cout<<"Введите число n: ";
     cin>>n;
-    if (n>0)
-    fout<<n;
-    else
-    fout.close();
-
+    while(n>=0)
+    {
+        fout<<n<<endl;
+        cout<<"число записалось в файл. Введите n заново"<<endl;
+        cin>>n;
+    }
+    
 }
