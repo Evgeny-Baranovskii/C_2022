@@ -4,21 +4,21 @@ class Box
 {
     public:
     float x,y,z;
-};
-float volume( float x, float y, float z)
-{
-    float a=x*y*z;
-    return a;
-}
+    float volume()
+    {
+      float a=x*y*z;
+      return a;
+    }
+ };
 int main()
 { 
-    float a,x,y,z;
+    Box b0;
     cout<<"Введите значение х: ";
-    cin>>x;
+    cin>>b0.x;
     cout<<"Введите значение y: ";
-    cin>>y;
+    cin>>b0.y;
     cout<<"Введите значение z: ";
-    cin>>z;
-    cout<<volume(x,y,z);
+    cin>>b0.z;
+    cout<<"Volume "<<b0.volume();
     return 0;
 }
